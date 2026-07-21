@@ -2,7 +2,13 @@
 using namespace std;
 int main()
 {
-    int a=10,b=20,c=15;
+    int a,b,c;
+    cout<<"Enter the number: ";
+    cin>>a;
+    cout<<"Enter the number: ";
+    cin>>b;
+    cout<<"Enter the number: ";
+    cin>>c;
     if (a>b && a>c)
     {
         cout<<a<<" is Greatest";
