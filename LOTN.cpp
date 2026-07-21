@@ -5,13 +5,13 @@ int main()
     int a=10,b=20,c=15;
     if (a>b && a>c)
     {
-        cout<<"a is Greatest";
+        cout<<a<<" is Greatest";
     }
     else if (b>c)
     {
-        cout<<"b is Greatest";
+        cout<<b<<" is Greatest";
     }
     else{
-        cout<<"c is Greatest";
+        cout<<c<<" is Greatest";
     }
 }
