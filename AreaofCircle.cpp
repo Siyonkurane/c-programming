@@ -8,7 +8,7 @@ int main()
     a=3.14*r*r;
     cout<<"Area of the circle="<<a<<endl;
     c=2*3.14*r;
-    cout<<"Circumference of the circle="<<c;
+    cout<<"Circumference of the circle="<<;
 
 
 } 
