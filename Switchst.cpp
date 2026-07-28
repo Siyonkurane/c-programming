@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int a,b,choice;
+    int a,b,ch;
 
     cout<<"Enter two numbers: "<<endl;
     cin>>a>>b;
@@ -14,8 +14,8 @@ int main()
     cout<<"4. Division"<<endl;
     
     cout<<"Enter operation number:"<<endl;
-    cin>>choice;
-    switch(choice)
+    cin>>ch;
+    switch(ch)
     {
         case 1:
           cout<<"Addition = "<<a+b;
