@@ -6,7 +6,7 @@ class Employee
     int employeeID;
     string employeeName;
     string department;
-    float annualSalary;
+    int annualSalary;
 
 public:
     void accept()
@@ -15,7 +15,9 @@ public:
         cin >> employeeID;
 
         cout << "Enter Employee Name: ";
-        cin >> employeeName;
+        //cin >> employeeName;
+        cin.ignore();
+        getline(cin, employeeName);
 
         cout << "Enter Department: ";
         cin >> department;
