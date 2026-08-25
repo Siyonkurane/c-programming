@@ -26,7 +26,7 @@ public:
 
 int main()
 {
-    Employee e("Siyon", 101, 50000);
+    Employee e("Siyon kurane", 6108, 500000);
 
     e.display();
 
