@@ -8,11 +8,20 @@ class Employee
     float salary;
 
 public:
+    
     Employee(string n, int i, float s)
     {
         name = n;
         id = i;
         salary = s;
+    }
+
+    
+    Employee(Employee &e)
+    {
+        name = e.name;
+        id = e.id;
+        salary = e.salary;
     }
 
     void display()
@@ -25,22 +34,16 @@ public:
 
 int main()
 {
-    string n;
-    int i;
-    float s;
+    Employee e1("Siyon kurane", 6108, 500000);
 
-    cout << "Enter name: ";
-    cin >> n;
+    
+    Employee e2(e1);
 
-    cout << "Enter ID: ";
-    cin >> i;
+    cout << "Employee 1:" << endl;
+    e1.display();
 
-    cout << "Enter salary: ";
-    cin >> s;
-
-    Employee e(n, i, s);
-
-    e.display();
+    cout <<endl<<"Employee 2 (Copied of 1):" << endl;
+    e2.display();
 
     return 0;
 }

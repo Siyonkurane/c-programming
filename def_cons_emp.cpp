@@ -11,9 +11,12 @@ public:
     
     Employee()
     {
-        name = "Siyon";
-        id = 101;
-        salary = 50000;
+        cout<<"Enter employee name: ";
+        cin>>name;
+        cout<<"Enter employee id: ";
+        cin>>id;
+        cout<<"Enter salary of employee: ";
+        cin>>salary;
     }
 
     void display()
