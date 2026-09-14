@@ -1,40 +1,47 @@
 #include <iostream>
 using namespace std;
 
-class Student
+class Employee
 {
-    string name;
-    int rollno;
-    float marks;
+    int employeeID;
+    string employeeName;
+    string department;
+    int annualSalary;
 
 public:
     void accept()
     {
-        cout << "Enter Student Name: ";
-        cin >> name;
+        cout << "Enter Employee ID: ";
+        cin >> employeeID;
 
-        cout << "Enter Roll Number: ";
-        cin >> rollno;
+        cout << "Enter Employee Name: ";
+        //cin >> employeeName;
+        cin.ignore();
+        getline(cin, employeeName);
 
-        cout << "Enter Marks: ";
-        cin >> marks;
+        cout << "Enter Department: ";
+        cin >> department;
+
+        cout << "Enter Annual Salary: ";
+        cin >> annualSalary;
     }
 
     void display()
     {
-        cout << " Student's Info :-" << endl;
-        cout << "Name: " << name << endl;
-        cout << "Roll Number: " << rollno << endl;
-        cout << "Marks: " << marks << endl;
+        cout << "Employee Information :- "<< endl;
+        cout << "Employee ID: " << employeeID << endl;
+        cout << "Employee Name: " << employeeName << endl;
+        cout << "Department: " << department << endl;
+        cout << "Annual Salary: " << annualSalary << endl;
     }
 };
 
 int main()
 {
-    Student s;
+    Employee e;
 
-    s.accept();
-    s.display();
+    e.accept();
+    e.display();
 
     return 0;
 }
