@@ -11,3 +11,7 @@ int main()
     cout<<"Perimeter="<<p;
 
 }
+
+/*Enter length and breadth:10
+20
+Area=200Perimeter=60*/
