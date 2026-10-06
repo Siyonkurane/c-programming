@@ -3,23 +3,23 @@ using namespace std;
 
 class Number
 {
-    int num;
+    int x;
 
 public:
     void getData()
     {
         cout << "Enter a number: ";
-        cin >> num;
+        cin >> x;
     }
 
-    void increment()
+    void operator++()
     {
-        num = num + 1;
+        ++x;
     }
 
     void display()
     {
-        cout << "Number = " << num << endl;
+        cout << "After increment: " << x << endl;
     }
 };
 
@@ -29,12 +29,8 @@ int main()
 
     n.getData();
 
-    cout << endl <<"Before increment:" << endl;
-    n.display();
+    ++n;       
 
-    n.increment();
-
-    cout << endl << "After increment:" << endl;
     n.display();
 
     return 0;
